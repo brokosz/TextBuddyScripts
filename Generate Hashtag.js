@@ -1,8 +1,8 @@
 //generate hashtags from a word or sentence
 
-function perLine(lineOfText) {
-  return "#" + lineOfText.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(match, index) {
-    if (+match === 0) return ""; // or if (/\s+/.test(match)) for white spaces
+function perLine(str) {
+  return "#" + str.replace(/(?:^\w|[A-Z]|\b\w|\s+)/g, function(match, index) {
+    if (+match === 0) return "";
     return index === 1 ? match.toLowerCase() : match.toUpperCase();
   });
 }
