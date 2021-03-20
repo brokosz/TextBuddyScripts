@@ -1,9 +1,6 @@
 # TextBuddyScripts
 Small collection of TextBuddy Scripts
 
-
-# Custom Scripts for TextBuddy.app
-
 [TextBuddy]: https://textbuddy.app/
 
 This repository is for my little scripts for [TextBuddy][], a Mac app by Tyler Hall.
