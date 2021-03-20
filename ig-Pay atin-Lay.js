@@ -1,13 +1,13 @@
 // igPay atinLay to English
 
-function pre (str) {
+function perLine(str) {
   var sentence = str.split(' ');
   var unpiggedPhrase = [];
 
   for (var i = 0; i <= sentence.length - 1; i++) {
     unpiggedPhrase.push(unpigWord(sentence[i]));
   };
-  return unpiggedPhrase.join(' ');
+  return unpiggedPhrase.join(' ') + '\n';
 }
 
 function unpigWord (piggedWord) {

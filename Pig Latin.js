@@ -1,13 +1,13 @@
 // English to ig-Pay atin-Lay
 
-function pre(str) {
+function perLine(str) {
   var sentence = str.split(' ');
   var piggedPhrase = [];
 
   for (var i = 0; i <= sentence.length - 1; i++) {
     piggedPhrase.push(pigWord(sentence[i]));
   };
-  return piggedPhrase.join(' ');
+  return piggedPhrase.join(' ') + '\n';
 }
 
 function pigWord (word) {
