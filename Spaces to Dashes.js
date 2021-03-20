@@ -1,5 +1,5 @@
 //convert spaces to dashes
 
-function perLine(str) {
+function pre(str) {
 return str.replace(/ /g, "-");
 }

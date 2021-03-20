@@ -1,5 +1,5 @@
 //convert dashes to underscore
 
-function perLine(str) {
+function pre(str) {
 return str.replace(/-/g, "_");
 }
