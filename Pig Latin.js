@@ -1,12 +1,27 @@
-// igPay atinLay
+// English to ig-Pay atin-Lay
 
 function pre(str) {
-  const arr = str.split(' ')
-  return arr
-    .map((word) => {
-      return word.match(/[A-z]/i)
-        ? `${word.substr(1)}${word.substr(0, 1)}ay`
-        : word
-    })
-    .join(' ')
+  var sentence = str.split(' ');
+  var piggedPhrase = [];
+
+  for (var i = 0; i <= sentence.length - 1; i++) {
+    piggedPhrase.push(pigWord(sentence[i]));
+  };
+  return piggedPhrase.join(' ');
+}
+
+function pigWord (word) {
+  return word.slice(findFirstVowel(word), word.length) + '-' + word.slice( -word.length, findFirstVowel(word)) + 'ay';
+}
+
+function findFirstVowel (word) {
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+  for (var i = 0; i <= word.length - 1; i++) {
+
+    if (vowels.indexOf(word[i]) !== -1 ) {
+      return i;
+    }
+  }
+  return word.length;
 }
