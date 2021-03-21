@@ -1,5 +1,6 @@
-   //function CamelCase to dash
+   //convert CamelCase to spaces
    	function pre(str) {
-      return str.replace(/\W+/g, ' ')
-                .replace(/([a-z\d])([A-Z]+)/g, '$1 $2');
+      str=str.replace(/\W+/g, ' ')
+      str=str.replace(/([a-z\d])([A-Z]+)/g, '$1 $2');
+      return str.toLowerCase();
    }
