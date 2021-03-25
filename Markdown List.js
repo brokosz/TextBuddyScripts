@@ -1,4 +1,4 @@
-//convert lines to Markdown quote
+//convert lines to Markdown list
 
 function perLine(str) {
   return "- " + str + "\n";
